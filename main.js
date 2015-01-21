@@ -34,12 +34,12 @@ context.clearRect(0, 0, canvas.width, canvas.height);
     var total = 0;
     var values = null; // added this
            
-//    $.getJSON( "cheese.json", function( data ) {
+    $.getJSON( "cheese.json", function( data ) {
     
-        $.ajax({
-            url:"cheese.json",
-            dataType: "json",
-        }).done(function( data ) {
+//        $.ajax({
+//            url:"cheese.json",
+//            dataType: "json",
+//        }).done(function( data ) {
     
     values = data;     
 
