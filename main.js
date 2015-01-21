@@ -38,7 +38,7 @@ context.clearRect(0, 0, canvas.width, canvas.height);
     
         $.ajax({
             url:"cheese.json",
-            dataType: "jsonp",
+            dataType: "json",
         }).done(function( data ) {
     
     values = data;     
