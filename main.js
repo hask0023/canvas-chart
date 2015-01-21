@@ -34,7 +34,12 @@ context.clearRect(0, 0, canvas.width, canvas.height);
     var total = 0;
     var values = null; // added this
            
-    $.getJSON( "cheese.json", function( data ) {
+//    $.getJSON( "cheese.json", function( data ) {
+    
+        $.ajax({
+            url:"cheese.json",
+            dataType: "jsonp",
+        }).done(function( data ) {
     
     values = data;     
 
@@ -95,7 +100,8 @@ for(var i=0; i<values.segments.length; i++){
     currentAngle = endAngle;
   }
     
-    })
+//    })
+            })
     
         
 };
