@@ -34,7 +34,7 @@ context.clearRect(0, 0, canvas.width, canvas.height);
     var total = 0;
     var values = null; // added this
            
-    $.getJSON( "/cheese.json", function( data ) {
+    $.getJSON( "cheese.json", function( data ) {
     
     values = data;     
 
@@ -108,7 +108,7 @@ function showBars(){ //bar graph
   setDefaultStyles();
     var total = 0;
 
-    $.getJSON( "/cheese.json", function( data ) {
+    $.getJSON( "cheese.json", function( data ) {
     
     values = data;
     
